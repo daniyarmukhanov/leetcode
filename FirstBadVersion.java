@@ -1,9 +1,5 @@
 public class FirstBadVersion {
-    public static void main(String[] args) {
-        System.out.println(firstBadVersion(5));
-    }
-
-    public static int firstBadVersion(int n) {
+    public int firstBadVersion(int n) {
         int right = n;
         int left = 1;
         int center;
@@ -15,8 +11,7 @@ public class FirstBadVersion {
         return left;
     }
 
-
-    private static boolean isBadVersion(int n) {
+    private boolean isBadVersion(int n) {
         return n >= 4;
     }
 }
