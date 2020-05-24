@@ -1,4 +1,4 @@
-import java.util.Stack;
+import java.util.ArrayList;
 
 public class KthSmallestElementBST {
     public ArrayList<Integer> inorder(TreeNode root, ArrayList<Integer> arr) {
@@ -10,7 +10,7 @@ public class KthSmallestElementBST {
     }
 
     public int kthSmallest(TreeNode root, int k) {
-        ArrayList<Integer> nums = inorder(root, new ArrayList<Integer>());
+        ArrayList<Integer> nums = inorder(root, new ArrayList<>());
         return nums.get(k - 1);
     }
 }
